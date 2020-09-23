@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "<Name Yout App Without Spaces>",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -22,11 +22,19 @@
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   },
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ]
-}
+  "keywords": [],
+  "build": {
+    "appId": "",
+    "asar": true,
+    "linux": {
+       "target": [
+	  "pacman",
+	  "deb"
+       ],
+       "icon": "build/....<Your Icon File Png>"
+    },
+    "win": {
+       "target": "NSIS",
+       "icon": "build/....<Your Icon File ico"
+    }
+  }
